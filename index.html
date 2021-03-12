@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>青寕信安科技</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <!-- 头部 -->
+    <my-head :keynumber="tabnum"></my-head>
+    <template>
+        <div class="swipe-1">
+            <el-carousel :interval="5000" arrow="always" height="750px">
+                <el-carousel-item style="background: url(images/banner01.jpg) no-repeat center/cover">
+                    <div class="imgInfo">
+                        <p class="name">疾病受伤预警引擎 </p>
+                        <p class="info">对牛只多维数据进行识别分析后，给出当前牛只异常状态分析结果<br/>及时推送消息预警，降低牛只疾病受伤死亡率。</p>
+                        <a href="##" class="more">查看详情 +</a>
+                    </div>
+                </el-carousel-item>
+                <el-carousel-item style="background: url(images/banner02.png) no-repeat center/cover">
+                    <div class="imgInfo" style="text-align: left;">
+                        <p class="name">繁殖优化引擎</p>
+                        <p class="info">提高发情识别率及种群提纯复壮成功率<br/>
+                            从而提升繁殖生产力。</p>
+                    </div>
+                </el-carousel-item>
+                <el-carousel-item style="background: url(images/banner03.jpg) no-repeat center/cover">
+                    <div class="imgInfo">
+                        <p class="name">疾病受伤预警</p>
+                        <p class="info">对牛只多维数据进行识别分析后<br/>
+                            给出当前牛只异常状态分析结果，及时推送消息预警<br/>
+                            降低牛只疾病受伤死亡率</p>
+                    </div>
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+    </template>
+    <div class="mainBox">
+       <div class="wrap clearfix">
+           <div class="mainBoxLeft">
+               <a href="sensorsHeathy.html" target="_blank">
+                   <div class="item box1">
+                       <p class="title">传感器与健康监测</p>
+                       <p class="intro">通过人工智能分析算法实时监测牛只健康状态</p>
+                   </div>
+               </a>
+           </div>
+           <div class="mainBoxRight">
+               <a href="cameraWeight.html" target="_blank">
+                   <div class="item box2" style="margin-top:0;">
+                       <p class="title">摄像头与体重识别</p>
+                       <p class="intro">通过视觉采集装置识别牛只体重变化精准饲养</p>
+                   </div>
+               </a>
+               <a href="blockchain.html" target="_blank">
+                   <div class="item box3">
+                       <p class="title">区块链与药效监测</p>
+                       <p class="intro">通过去人化技术记录分析用药效果避免药物滥用</p>
+                   </div>
+               </a>
+           </div>
+       </div>
+    </div>
+<!--    <template>-->
+        <div class="swiper-2">
+            <div class="item" style="background: url(images/swipe01.jpg) no-repeat center/cover">
+<!--                <img src="images/swipe01.jpg">-->
+                <div class="title">智能消防</div>
+                <div class="zhezhao">
+                    <div class="name">智能消防</div>
+                    <div class="info">以自研关键技术为核心<br/>在养殖协同领域打造端到端<br/>闭环的数据+分析+决策的服务体系</div>
+                </div>
+            </div>
+            <div class="item" style="background: url(images/swipe02.jpg) no-repeat center/cover">
+                <div class="title">智慧农牧</div>
+                <div class="zhezhao">
+                    <div class="name">智慧农牧</div>
+                    <div class="info">以自研关键技术为核心<br/>在养殖协同领域打造端到端<br/>闭环的数据+分析+决策的服务体系</div>
+                </div>
+            </div>
+            <div class="item" style="background: url(images/swipe03.jpg) no-repeat center/cover">
+                <div class="title">智慧养老</div>
+                <div class="zhezhao">
+                    <div class="name">智慧养老</div>
+                    <div class="info">以自研关键技术为核心<br/>在养殖协同领域打造端到端<br/>闭环的数据+分析+决策的服务体系</div>
+                </div>
+            </div>
+<!--            <template>-->
+<!--                <el-carousel :interval="5000" arrow="always">-->
+<!--                    <el-carousel-item style="background: url(images/swipe03.jpg) no-repeat center/cover">-->
+<!--                        <h3>智能消防</h3>-->
+<!--                    </el-carousel-item>-->
+<!--                    <el-carousel-item style="background: url(images/swipe01.jpg) no-repeat center/cover">-->
+<!--                        <h3>智慧农牧</h3>-->
+<!--                    </el-carousel-item>-->
+<!--                    <el-carousel-item style="background: url(images/swipe02.jpg) no-repeat center/cover">-->
+<!--                        <h3>智慧养老</h3>-->
+<!--                    </el-carousel-item>-->
+<!--                </el-carousel>-->
+<!--            </template>-->
+<!--            <el-carousel :interval="4000" type="card" height="470px" indicator-position="none" arrow="always">-->
+<!--                <el-carousel-item style="background: url(images/swipe03.jpg) no-repeat center/cover">-->
+<!--                    <div class="item-txt">-->
+<!--                        <p class="title">智能消防</p>-->
+<!--                        <p class="pre"></p>-->
+<!--                        <p class="intro">提供从传感器硬件产品到云端智能监控预<br/>-->
+<!--                            警系统等一整套的服务方案。</p>-->
+<!--                    </div>-->
+<!--                </el-carousel-item>-->
+<!--                <el-carousel-item style="background: url(images/swipe01.jpg) no-repeat center/cover">-->
+<!--                    <div class="item-txt">-->
+<!--                        <p class="title">智慧农牧</p>-->
+<!--                        <p class="pre"></p>-->
+<!--                        <p class="intro">以自研关键技术为核心，在养殖协同领域<br/>-->
+<!--                            打造端到端闭环的数据+分析+决策的服务体系。</p>-->
+<!--                    </div>-->
+<!--                </el-carousel-item>-->
+<!--                <el-carousel-item style="background: url(images/swipe02.jpg) no-repeat center/cover">-->
+<!--                    <div class="item-txt">-->
+<!--                        <p class="title">智慧养老</p>-->
+<!--                        <p class="pre"></p>-->
+<!--                        <p class="intro">结合智能终端与大数据云平台，随时随地<br/>-->
+<!--                            守护老人的人身安全。</p>-->
+<!--                    </div>-->
+<!--                </el-carousel-item>-->
+<!--            </el-carousel>-->
+        </div>
+<!--    </template>-->
+    <div class="mainBox2">
+        <h2 class="boxTitle">商业案例</h2>
+        <div class="boxMain">
+            <div class="wrap" style="position: relative;">
+                <div class="item clearfix">
+                    <div class="txt">
+                        <p class="info">藏区未来牧场项目 </p>
+                        <div class="intro">2018-2022年<br/><br/>参与西藏当雄县未来牧场项目建设<br/>设立亲情养育与疾病受伤监测模块试点示范 </div>
+                        <a href="##" class="more">查看详情 +</a>
+                    </div>
+                    <img src="images/examp-p04.jpg" class="pic"/>
+                </div>
+            </div>
+        </div>
+    </div><!--商业案例-->
+
+    <div class="mainBox3">
+        <div class="wrap">
+            <h2 class="boxTitle">新闻中心</h2>
+            <ul class="newsList clearfix">
+                <li>
+                    <a href="news.html" target="_blank">
+                        <div class="picture">
+                            <img src="images/news01.jpg"/>
+                            <div class="pre">
+                                <p class="month">07</p>
+                                <p class="year">2020</p>
+                            </div>
+                        </div>
+                        <p class="name">入选联合国工业发展组织发起的<br/>“创新思维与技术应对新冠疫情”<br/>农业组排名第一 </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news.html" target="_blank">
+                        <div class="picture">
+                            <img src="images/news02.jpg"/>
+                            <div class="pre">
+                                <p class="month">07</p>
+                                <p class="year">2020</p>
+                            </div>
+                        </div>
+                        <p class="name">被新华网称为世界人工智能大会<br/>八大镇馆黑科技之一</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="news.html" target="_blank">
+                        <div class="picture">
+                            <img src="images/news03.jpg"/>
+                            <div class="pre">
+                                <p class="month">07</p>
+                                <p class="year">2019</p>
+                            </div>
+                        </div>
+                        <p class="name">荣获2019德国红点之星设计概念奖</p>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div><!--新闻中心-->
+    <div class="mainBox4">
+        <div class="wrap">
+            <h2 class="boxTitle">合作伙伴</h2>
+            <div>
+                <img src="images/com-logo.png"/>
+            </div>
+        </div>
+    </div><!--合作伙伴-->
+
+    <!-- 底部 -->
+    <my-foot></my-foot>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入 http-vue-loader -->
+<script src="https://unpkg.com/http-vue-loader"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript">
+    //httpVueLoader.register(Vue,'component/my-head.vue');
+    Vue.use(httpVueLoader)
+      new Vue({
+        el: '#app',
+        data(){
+           return{
+               tabnum:1
+           }
+        },
+          components: {
+              // 将组建加入组建库
+              'my-head': 'url:component/my-head.vue',
+              'my-foot': 'url:component/my-foot.vue'
+          }
+      })
+</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>区块链与药效识别</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="blockChainPage" id="app">
+    <!-- 头部 -->
+    <my-head :keynumber="tabnum"></my-head>
+<!--    <div class="bannerBox"></div>-->
+    <div class="bannerBox">
+        <div class="wrap">
+            <p>区块链与药效识别</p>
+        </div>
+    </div>
+
+    <div class="mainBox">
+        <div class="bigTitle">区块链与药效识别<span>Blockchain and pharmacodynamic identification</span></div>
+        <div class="wrap">
+            <div class="topInfo">
+                滥用抗生素造成了超级细菌的出现，世界卫生组织警告这是全球健康的最大威胁之一。中国滥用抗生素情况尤其严重，中国
+                科学院发布的报告显示，2013年大陆所使用的16.2万吨抗生素中，48%为人用，52%为兽用；在36种常见抗生素中，用于
+                动物的比例则高达4.3%。
+            </div>
+            <div class="item">
+                <div class="intro">
+                    <div class="info">什么是抗生素滥用<span></span></div>
+                    <p>凡是超时、超量、不对症使用或未严格规范的抗生素使用行为，都属于抗生素滥用。抗生素滥用会导致抗生素耐药性的传播，从而促成超级细菌的出现。</p>
+                </div>
+                <div class="pic">
+                    <img src="images/sensors/b-c-01.png" alt="" width="700"/>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="images/sensors/b-c-02.png" alt="" width="700"/>
+                </div>
+                <div class="intro mr">
+                    <div class="info">如何控制抗生素滥用<span></span></div>
+                   <p>在所有以动植物为来源的食品生产和处理步骤中严格把控相关规定，保证用于动物的抗生素仅用于控制和治疗传染病，并在兽医监督下进行。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="intro">
+                    <div class="info">区块链技术应用<span></span></div>
+                    <p>采用区块链技术，准确无误记录药品使用时间、用量。同时依照牲畜用药后的生命体征，比对标准药效模型，精准识别用药效果。以此来大幅降低抗生素滥用比例及用药成本，同时避免用药失误造成的损失。</p>
+                </div>
+                <div class="pic">
+                    <img src="images/sensors/b-c-03.png" alt="" width="700"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 底部 -->
+    <my-foot></my-foot>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入 http-vue-loader -->
+<script src="https://unpkg.com/http-vue-loader"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript">
+    //httpVueLoader.register(Vue,'component/my-head.vue');
+    Vue.use(httpVueLoader)
+    new Vue({
+        el: '#app',
+        data(){
+            return{
+                tabnum:1
+            }
+        },
+        components: {
+            // 将组建加入组建库
+            'my-head': 'url:component/my-head.vue',
+            'my-foot': 'url:component/my-foot.vue'
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>加入我们</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="joinPage" id="app">
+    <my-head :keynumber="tabnum"></my-head>
+    <div class="bannerBox">
+        <div class="wrap">
+            <div class="imgContent">
+                <p class="title">智能感知，连接更优秀的你</p>
+                <div class="mBox">
+                    物联时代已经到来，我们应用前沿物联网技术，希望让每一个生命都得到细致的理解、应有的尊重、贴心的呵护和多元化的生命体验。加入青寕科技，和我们一起拥抱用爱连接的传感艺术时代。
+                    <h3>简历投递邮箱：hr@qingningxinan.com</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="listBox">
+        <div class="bigTitle">技术类<span>Technology</span></div>
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="1">嵌入式软件工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                        2.新需求模块的快速开发；<br/>
+                        3.无线终端产品软件开发，测试，维护；<br/>
+                        4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                        5.软件spec文档，测试用例文档编写维护。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="2">系统软件研发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责智能处理器平台的系统软件研发；<br/>
+                        2.独立开发Linux/Android系统的驱动程序及底层SDK；<br/>
+                        3.负责智能加速卡的板级开发与调试；<br/>
+                        4.优化系统性能和可靠性。
+                    </div>
+
+                </div>
+
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="3">结构工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责产品3D建模、结构设计，包括五金件和塑胶件等；<br/>
+                        2.协助负责材料选型、结构可靠性分析；<br/>
+                        3.负责产品制造工艺分析、可生产性评估；<br/>
+                        4.负责模具制造跟踪，协助解决生产问题；<br/>
+                        5.根据手板测试结果对产品进行优化、调整；<br/>
+                        6.日常项目的跟踪、管理。包括跨部门协作、供应商对接、技术讨论等。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 1">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 50px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                            2.新需求模块的快速开发；<br/>
+                            3.无线终端产品软件开发，测试，维护；<br/>
+                            4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                            5.软件spec文档，测试用例文档编写维护。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.全日制本科及以上学历，3年及以上工作经验；<br/>
+                            2.熟悉MCU开发，至少精通一款ARM内核MCU，例如STM32系列，LPC系列等；<br/>
+                            3.熟悉蓝牙，Wi-Fi，ZigBee，LORA等一种或几种无线通信协议。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 2">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 450px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责产品3D建模、结构设计，包括五金件和塑胶件等；<br/>
+                            2.协助负责材料选型、结构可靠性分析；<br/>
+                            3.负责产品制造工艺分析、可生产性评估；<br/>
+                            4.负责模具制造跟踪，协助解决生产问题；<br/>
+                            5.根据手板测试结果对产品进行优化、调整；<br/>
+                            6.日常项目的跟踪、管理。包括跨部门协作、供应商对接、技术讨论等。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.熟练掌握C/C++编程技能；<br/>
+                            2.精通ARM/X86系统架构和Linux内核，阅读过内核主要模块的源代码；<br/>
+                            3.熟悉Linux系统接口和驱动的开发；<br/>
+                            4.熟悉ARM平台SMMU架构和驱动；<br/>
+                            5.熟悉PCIE/I2C/SPI等总线接口；<br/>
+                            6.有SoC平台IP驱动和系统软件开发经验；<br/>
+                            7.开发过大型的系统软件优先；<br/>
+                            8.有良好的沟通技能，优秀的分析问题和解决问题的能力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 3">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 850px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责产品3D建模、结构设计，包括五金件和塑胶件等；<br/>
+                            2.协助负责材料选型、结构可靠性分析；<br/>
+                            3.负责产品制造工艺分析、可生产性评估；<br/>
+                            4.负责模具制造跟踪，协助解决生产问题；<br/>
+                            5.根据手板测试结果对产品进行优化、调整；<br/>
+                            6.日常项目的跟踪、管理。包括跨部门协作、供应商对接、技术讨论等。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.熟悉产品设计使用材料特性（如塑胶，金属等），熟悉机械加工工艺
+                            及各种材料表面处理(如塑料件的表面喷漆、丝印)；<br/>
+                            2.独立完成整套产品结构设计及跟踪工作，包括样机制作、开模、小批
+                            量试产等；<br/>
+                            3.熟练使用AutoCAD、Pro-E等软件。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="4">电子工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责智能手环等可穿戴产品的设计、元器件选用、LAYOUT工作，为产品的可行性分析提供技术建议；<br/>
+                        2.负责完成硬件与结构件的配合设计，确保达到产品设计要求；<br/>
+                        3.参与产品开发的样品生产和批量试制工作，解决制样、试制过程中出现的硬件设计、LAYOUT等技术问题，参与产品开发各个阶段的技术评审；<br/>
+                        4.和其它部门密切协作，保证整个产品的相关目标按期实现；<br/>
+                        5.编写产品相关技术文档。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="5">测试工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.参与公司产品需求讨论、评估；<br/>
+                        2.编写测试计划、测试用例、执行测试，提交测试分析报告；<br/>
+                        3.负责产品功能、接口、性能测试；<br/>
+                        4.推动测试流程的实施，协助软件开发人员进行问题定位。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="6">自动化测试工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.搭建自动化测试框架，实现接口，WEB端、APP端的自动化测试；<br/>
+                        2.根自动化测试的需求，设计自动化测试的场景、数据、脚本；<br/>
+                        3.编写符合需求与设计的自动化测试用例；<br/>
+                        4.开发、调试、执行项目自动化测试脚本，出具测试报告。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 4">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 50px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责智能手环等可穿戴产品的设计、元器件选用、LAYOUT工作，为产品的可行性分析提供技术建议；<br/>
+                            2.负责完成硬件与结构件的配合设计，确保达到产品设计要求；<br/>
+                            3.参与产品开发的样品生产和批量试制工作，解决制样、试制过程中出现的硬件设计、LAYOUT等技术问题，参与产品开发各个阶段的技术评审；<br/>
+                            4.和其它部门密切协作，保证整个产品的相关目标按期实现；<br/>
+                            5.编写产品相关技术文档。
+                        </div>
+
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.电子、通信、计算机、自动控制等相关专业毕业；大专以上学历；<br/>
+                            2.有4年以上独立产品项目的设计、开发、测试经验。<br/>
+                            3.熟悉一般单片机常识<br/>
+                            4.熟悉智能手环、电子元器件等常规成本<br/>
+                            5.熟悉智能手环供应链<br/>
+                            6.熟练应用PADS、PROTEL等LAYOUT软件进行PCB Layout布线，熟悉信号完整性在PCB可靠性设计中的应用。<br/>
+                            7.精通电路设计、调试；对单片机外围电路搭建和应用开发有比较深入认识；能熟练使用示波器、电子负载、万用表等仪器。<br/>
+                            8.较强的学习能力和问题分析能力，严谨的工作态度，良好的团队合作精神及沟通能力；<br/>
+                            9.熟悉TI2540，NODIC 51822等蓝牙BLE应用开发者优先考虑，有蓝牙计步器、智能手环等可穿戴设备开发经验者优先考虑。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 5">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 450px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.参与公司产品需求讨论、评估；<br/>
+                            2.编写测试计划、测试用例、执行测试，提交测试分析报告；<br/>
+                            3.负责产品功能、接口、性能测试；<br/>
+                            4.推动测试流程的实施，协助软件开发人员进行问题定位。
+                        </div>
+
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.计算机类、信息类等相关专业，一年以上测试工作经验；<br/>
+                            2.测试基础扎实，能够熟练掌握软件测试设计的方法；<br/>
+                            3.有较强的测试分析能力和逻辑分析能力；<br/>
+                            4.热爱软件测试工作，有耐性完成一些重复性的测试工作；<br/>
+                            5.有良好的沟通能力、需求理解能力，较强的学习能力和团队合作精神。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 6">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 850px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.搭建自动化测试框架，实现接口，WEB端、APP端的自动化测试；<br/>
+                            2.根自动化测试的需求，设计自动化测试的场景、数据、脚本；<br/>
+                            3.编写符合需求与设计的自动化测试用例；<br/>
+                            4.开发、调试、执行项目自动化测试脚本，出具测试报告。
+                        </div>
+
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                            2.新需求模块的快速开发；<br/>
+                            3.无线终端产品软件开发，测试，维护；<br/>
+                            4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                            5.软件spec文档，测试用例文档编写维护。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="7">前端开发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责核心产品前端研发和架构设计；<br/>
+                        2.负责解决公司核心产品的前端性能优化等复杂问题；<br/>
+                        3.不断优化完善公司商业级产品的工程质量。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="8">安卓开发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.与其他组协作，完成相应的安卓App开发；<br/>
+                        2.开发新的App及相关SDK，维护前期的App及SDK；<br/>
+                        3.负责相关App及SDK的技术支持；<br/>
+                        4.核心技术攻关，跟踪前沿技术，调研最新android系统。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="9">射频工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.射频电路原理设计；
+                        2.检查射频PCB布局和布线设计；
+                        3.射频性能和电路优化，问题分析，干扰排查；
+                        4.EMC/EMI相关方面的设计和问题解决；
+                        5.RF相关物料选型，新技术的硬件实现；
+                        6.仪器操作:CMW500，3110，8960，网络分析仪；
+                        7.射频相关BOM的制作和审核。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 7">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 50px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责核心产品前端研发和架构设计；<br/>
+                            2.负责解决公司核心产品的前端性能优化等复杂问题；<br/>
+                            3.不断优化完善公司商业级产品的工程质量。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科及以上计算机相关专业毕业，3-5年及以上工作经验；<br/>
+                            2.熟练使用各种前端技术，包括HTML/CSS/JavaScript等；<br/>
+                            3.熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性；<br/>
+                            4.了解前端前沿技术，熟练使用至少一种前端框架，包括但不限于React，Vue。js，AngularJS，掌握其原理，能独立开发常用组件；<br/>
+                            5.具备中大型Web系统设计和重构经验优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 8">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 450px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.与其他组协作，完成相应的安卓App开发；<br/>
+                            2.开发新的App及相关SDK，维护前期的App及SDK；<br/>
+                            3.负责相关App及SDK的技术支持；<br/>
+                            4.核心技术攻关，跟踪前沿技术，调研最新android系统。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.计算机及相关专业，本科以上学历；<br/>
+                            2.三年以上工作经验，长期从事AndroidApp开发，可独立根据UI及功能需求，完成App；<br/>
+                            3.有蓝牙开发经验者优先，有开源代码开发经验优先；<br/>
+                            4.具备较强的英文读写能力；<br/>
+                            5.责任心强，善于沟通，对技术精益求精，对细节严苛要求。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 9">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 850px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.射频电路原理设计；
+                            2.检查射频PCB布局和布线设计；
+                            3.射频性能和电路优化，问题分析，干扰排查；
+                            4.EMC/EMI相关方面的设计和问题解决；
+                            5.RF相关物料选型，新技术的硬件实现；
+                            6.仪器操作:CMW500，3110，8960，网络分析仪；
+                            7.射频相关BOM的制作和审核。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科及以上学历，电子/通信相关专业；<br/>
+                            2.相同岗位3年以上工作经验；<br/>
+                            3.掌握射频工作原理；<br/>
+                            4.了解国内认证CTA和海外认证CE/GCF/FCC等测试项；<br/>
+                            5.熟悉射频主要器Transceiver/PA/SAW/ASM，熟悉BT/GPS/WIFI等指标的测试；<br/>
+                            6.掌握PADS等EDA工具。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="wrap" style="display: none;">
+            <div class="joinUsBox">
+                <div class="itemBox">
+                    <p class="title">嵌入式软件工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                        2.新需求模块的快速开发；<br/>
+                        3.无线终端产品软件开发，测试，维护；<br/>
+                        4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                        5.软件spec文档，测试用例文档编写维护。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.全日制本科及以上学历，3年及以上工作经验；<br/>
+                        2.熟悉MCU开发，至少精通一款ARM内核MCU，例如STM32系列，LPC系列等；<br/>
+                        3.熟悉蓝牙，Wi-Fi，ZigBee，LORA等一种或几种无线通信协议。
+                    </div>
+
+                </div>
+                <div class="itemBox">
+                    <p class="title">系统软件研发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责智能处理器平台的系统软件研发；<br/>
+                        2.独立开发Linux/Android系统的驱动程序及底层SDK；<br/>
+                        3.负责智能加速卡的板级开发与调试；<br/>
+                        4.优化系统性能和可靠性。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.熟练掌握C/C++编程技能；<br/>
+                        2.精通ARM/X86系统架构和Linux内核，阅读过内核主要模块的源代码；<br/>
+                        3.熟悉Linux系统接口和驱动的开发；<br/>
+                        4.熟悉ARM平台SMMU架构和驱动；<br/>
+                        5.熟悉PCIE/I2C/SPI等总线接口；<br/>
+                        6.有SoC平台IP驱动和系统软件开发经验；<br/>
+                        7.开发过大型的系统软件优先；<br/>
+                        8.有良好的沟通技能，优秀的分析问题和解决问题的能力。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title">结构工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责产品3D建模、结构设计，包括五金件和塑胶件等；<br/>
+                        2.协助负责材料选型、结构可靠性分析；<br/>
+                        3.负责产品制造工艺分析、可生产性评估；<br/>
+                        4.负责模具制造跟踪，协助解决生产问题；<br/>
+                        5.根据手板测试结果对产品进行优化、调整；<br/>
+                        6.日常项目的跟踪、管理。包括跨部门协作、供应商对接、技术讨论等。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.熟悉产品设计使用材料特性（如塑胶，金属等），熟悉机械加工工艺
+                        及各种材料表面处理(如塑料件的表面喷漆、丝印)；<br/>
+                        2.独立完成整套产品结构设计及跟踪工作，包括样机制作、开模、小批
+                        量试产等；<br/>
+                        3.熟练使用AutoCAD、Pro-E等软件。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">电子工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责智能手环等可穿戴产品的设计、元器件选用、LAYOUT工作，为产品的可行性分析提供技术建议；<br/>
+                        2.负责完成硬件与结构件的配合设计，确保达到产品设计要求；<br/>
+                        3.参与产品开发的样品生产和批量试制工作，解决制样、试制过程中出现的硬件设计、LAYOUT等技术问题，参与产品开发各个阶段的技术评审；<br/>
+                        4.和其它部门密切协作，保证整个产品的相关目标按期实现；<br/>
+                        5.编写产品相关技术文档。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.电子、通信、计算机、自动控制等相关专业毕业；大专以上学历；<br/>
+                        2.有4年以上独立产品项目的设计、开发、测试经验。<br/>
+                        3.熟悉一般单片机常识<br/>
+                        4.熟悉智能手环、电子元器件等常规成本<br/>
+                        5.熟悉智能手环供应链<br/>
+                        6.熟练应用PADS、PROTEL等LAYOUT软件进行PCB Layout布线，熟悉信号完整性在PCB可靠性设计中的应用。<br/>
+                        7.精通电路设计、调试；对单片机外围电路搭建和应用开发有比较深入认识；能熟练使用示波器、电子负载、万用表等仪器。<br/>
+                        8.较强的学习能力和问题分析能力，严谨的工作态度，良好的团队合作精神及沟通能力；<br/>
+                        9.熟悉TI2540，NODIC 51822等蓝牙BLE应用开发者优先考虑，有蓝牙计步器、智能手环等可穿戴设备开发经验者优先考虑。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">测试工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.参与公司产品需求讨论、评估；<br/>
+                        2.编写测试计划、测试用例、执行测试，提交测试分析报告；<br/>
+                        3.负责产品功能、接口、性能测试；<br/>
+                        4.推动测试流程的实施，协助软件开发人员进行问题定位。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.计算机类、信息类等相关专业，一年以上测试工作经验；<br/>
+                        2.测试基础扎实，能够熟练掌握软件测试设计的方法；<br/>
+                        3.有较强的测试分析能力和逻辑分析能力；<br/>
+                        4.热爱软件测试工作，有耐性完成一些重复性的测试工作；<br/>
+                        5.有良好的沟通能力、需求理解能力，较强的学习能力和团队合作精神。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">自动化测试工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.搭建自动化测试框架，实现接口，WEB端、APP端的自动化测试；<br/>
+                        2.根自动化测试的需求，设计自动化测试的场景、数据、脚本；<br/>
+                        3.编写符合需求与设计的自动化测试用例；<br/>
+                        4.开发、调试、执行项目自动化测试脚本，出具测试报告。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                        2.新需求模块的快速开发；<br/>
+                        3.无线终端产品软件开发，测试，维护；<br/>
+                        4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                        5.软件spec文档，测试用例文档编写维护。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">嵌入式软件工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.独立进行无线终端软件程序的设计、思维导图、代码编写与测试工作；<br/>
+                        2.新需求模块的快速开发；<br/>
+                        3.无线终端产品软件开发，测试，维护；<br/>
+                        4.参与无线终端产品硬件方案设计，原理审核；<br/>
+                        5.软件spec文档，测试用例文档编写维护。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.全日制本科及以上学历，3年及以上工作经验；<br/>
+                        2.熟悉MCU开发，至少精通一款ARM内核MCU，例如STM32系列，LPC系列等；<br/>
+                        3.熟悉蓝牙，Wi-Fi，ZigBee，LORA等一种或几种无线通信协议。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">前端开发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责核心产品前端研发和架构设计；<br/>
+                        2.负责解决公司核心产品的前端性能优化等复杂问题；<br/>
+                        3.不断优化完善公司商业级产品的工程质量。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.本科及以上计算机相关专业毕业，3-5年及以上工作经验；<br/>
+                        2.熟练使用各种前端技术，包括HTML/CSS/JavaScript等；<br/>
+                        3.熟练掌握盒模型、常用布局以及浏览器和移动设备兼容性；<br/>
+                        4.了解前端前沿技术，熟练使用至少一种前端框架，包括但不限于React，Vue。js，AngularJS，掌握其原理，能独立开发常用组件；<br/>
+                        5.具备中大型Web系统设计和重构经验优先。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">安卓开发工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.与其他组协作，完成相应的安卓App开发；<br/>
+                        2.开发新的App及相关SDK，维护前期的App及SDK；<br/>
+                        3.负责相关App及SDK的技术支持；<br/>
+                        4.核心技术攻关，跟踪前沿技术，调研最新android系统。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.计算机及相关专业，本科以上学历；<br/>
+                        2.三年以上工作经验，长期从事AndroidApp开发，可独立根据UI及功能需求，完成App；<br/>
+                        3.有蓝牙开发经验者优先，有开源代码开发经验优先；<br/>
+                        4.具备较强的英文读写能力；<br/>
+                        5.责任心强，善于沟通，对技术精益求精，对细节严苛要求。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">测试开发工程师（音视频方向）</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责算法软件栈的质量保证工作；
+                        2.积极探索新的方法或工具以提高产品质量、性能以及稳定性；
+                        3.能够通过技术手段，提高产品交付效率；
+                        4.负责养殖场动物测试和电子产品安装，有2~3周连续驻场要求。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.计算机、电子工程、数学、通信、自动化等相关专业，本科及以上学历；<br/>
+                        2.逻辑思维清晰，积极主动，责任心和抗压能力强，具备优秀的分析问题和解决问题的能力；<br/>
+                        3.熟悉C/C++/python编程语言，并且有良好的编程风格和工作习惯；<br/>
+                        4.具有视频产品的开发或测试相关经验。<br/><br/>
+                        满足以下一种或多种条件者优先。<br/>
+                        A.了解计算机体系结构、LinuxKernel，有BSP开发或测试相关经验；<br/>
+                        B.了解H264等视频编解码算法，了解FFmpeg视频编解码框架。
+                    </div>
+                </div>
+
+                <div class="itemBox">
+                    <p class="title">射频工程师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.射频电路原理设计；
+                        2.检查射频PCB布局和布线设计；
+                        3.射频性能和电路优化，问题分析，干扰排查；
+                        4.EMC/EMI相关方面的设计和问题解决；
+                        5.RF相关物料选型，新技术的硬件实现；
+                        6.仪器操作:CMW500，3110，8960，网络分析仪；
+                        7.射频相关BOM的制作和审核。
+                    </div>
+                    <p class="name">任职要求</p>
+                    <div class="info">
+                        1.本科及以上学历，电子/通信相关专业；<br/>
+                        2.相同岗位3年以上工作经验；<br/>
+                        3.掌握射频工作原理；<br/>
+                        4.了解国内认证CTA和海外认证CE/GCF/FCC等测试项；<br/>
+                        5.熟悉射频主要器Transceiver/PA/SAW/ASM，熟悉BT/GPS/WIFI等指标的测试；<br/>
+                        6.掌握PADS等EDA工具。
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 产品类招聘信息 -->
+    <div class="listBox" style="background: #f6f9fc">
+        <div class="bigTitle">产品类<span>Products</span></div>
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="10">智能硬件产品经理</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.市场调研及分析物产品联网/智能硬件终端产品行业、竞争对手、用户等调研及分析；<br/>
+                        2.新产品的定义产品需求收集、产品定位、产品规划等；<br/>
+                        3.现有产品的迭代结合行业变化，对现有产品进行分析管理，推动迭代；<br/>
+                        4.领导安排的与产品相关的其他工作。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="11">产品经理</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责公司核心网平台相关的迭代，优化开发者服务质量，提升业务效率；<br/>
+                        2.与多部门协作，提升产品质量，保证项目正常进行；<br/>
+                        3.梳理系统功能和业务逻辑，跟踪内外部反馈，发掘业务改进点并完善方案推进落地。
+                    </div>
+
+                </div>
+
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="12">UI设计师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.公司各项目PC、APP端UI设计，包括新产品风格定义及产品日常迭代的设计更新；<br/>
+                        2.公司各项目PC、APP端产品设计中的交互及用户体验优化。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 10">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 50px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.市场调研及分析物产品联网/智能硬件终端产品行业、竞争对手、用户等调研及分析；<br/>
+                            2.新产品的定义产品需求收集、产品定位、产品规划等；<br/>
+                            3.现有产品的迭代结合行业变化，对现有产品进行分析管理，推动迭代；<br/>
+                            4.领导安排的与产品相关的其他工作。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科及上学历，理工科相关专业，3年以上物联网/智能硬件终端产品的从业经验；<br/>
+                            2.了解物联网/智能硬件终端产品和市场发展及布局，喜欢研究智能硬件产品，电子发烧友尤佳；<br/>
+                            3.思维敏捷，用户感知、市场洞察、及逻辑思维能力强，有一定的底层规划能力及成本控制意识；<br/>
+                            4.具有创新精神及责任心，充满激情，能承受工作压力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 11">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 430px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责公司核心网平台相关的迭代，优化开发者服务质量，提升业务效率；<br/>
+                            2.与多部门协作，提升产品质量，保证项目正常进行；<br/>
+                            3.梳理系统功能和业务逻辑，跟踪内外部反馈，发掘业务改进点并完善方案推进落地。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.计算机、网络、通信等相关专业本科及以上学历；<br/>
+                            2.3-5年产品经理工作经验，熟悉产品经理的岗位职责和工作流程；<br/>
+                            3.具备开放平台、业务后台、数据平台产品设计经验；<br/>
+                            4.良好的交互设计与视觉审美能力；<br/>
+                            5.逻辑清晰、自驱力强、富有责任心；<br/>
+                            6.智能硬件、物联网相关工作经历加分。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 12">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 830px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.公司各项目PC、APP端UI设计，包括新产品风格定义及产品日常迭代的设计更新；<br/>
+                            2.公司各项目PC、APP端产品设计中的交互及用户体验优化。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.有复杂后台网站设计、APP设计相关经验；<br/>
+                            2.对用户体验敏感，善用设计语言解决产品问题；<br/>
+                            3.熟悉IOS/Android/Web平台设计规范，能独立完成项目的交互和UI设计；<br/>
+                            4.工作态度端正，有责任心并能承受一定的工作压力，能适应加班等各 种应急需求<br/>
+                            要求请投递简历的同时附带个人作品或附上作品线上地址。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="13">项目实施经理</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.根据实地调研信息制订主要粮食作物和经济作物的基础植保方案、农 资管理方案；<br/>
+                        2.挖掘行业新痛点，分析潜在市场，横向对比同质产品，竞品分析，为产品优化提供参考；<br/>
+                        3.编制培训教材，对接农场操作人员并实施培训；<br/>
+                        4.所负责区域项目落地进度跟踪及管理，根据业务区域，对业务情况进行梳理，定期汇报总结；<br/>
+                        5.对于业务推进过程中遇到的问题进行分析并提出相应解决方案
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="14">大数据产品经理</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责整个大数据运营平台的产品生命周期的建设，为集团决策运营提供数据方案以及负责产品从概念提出、到分析决策、到执行落地；<br/>
+                        2.需求调研、用户访谈，梳理业务流程、挖掘用户需求、完善产品功能和体验，完成产品原型设计及产品需求分析文档的编写；<br/>
+                        3.根据实际业务流程来分析系统功能需求，并与设计、开发、测试、业务人员等多方资源进行沟通，确定实现方案；<br/>
+                        4.对已经实现的系统进行需求验证，确认系统与需求设计保持一致，参与系统功能验收工作及用户手册、新增产品功能培训资料的编写。
+                    </div>
+
+                </div>
+
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="15">交互设计师</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.参与公司新产品的概念设计和产品体验框架的制定和设计；<br/>
+                        2.对产品持续进行设计优化，提升用户体验；<br/>
+                        3.进行设计规范的输出，并推动规范在整个项目团队执行。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 13">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 50px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.根据实地调研信息制订主要粮食作物和经济作物的基础植保方案、农 资管理方案；<br/>
+                            2.挖掘行业新痛点，分析潜在市场，横向对比同质产品，竞品分析，为产品优化提供参考；<br/>
+                            3.编制培训教材，对接农场操作人员并实施培训；<br/>
+                            4.所负责区域项目落地进度跟踪及管理，根据业务区域，对业务情况进行梳理，定期汇报总结；<br/>
+                            5.对于业务推进过程中遇到的问题进行分析并提出相应解决方案
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.了解农资流通现状和经营模式，熟悉主要的农化企业的运作模式和业务模式；<br/>
+                            2.国内一线农业院校植保专业背景，或供职于主流农化企业，有相关工作经验；<br/>
+                            3.有电信运营商、设备商和农业信息化行业工作背景的优先考虑。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 14">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 450px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责整个大数据运营平台的产品生命周期的建设，为集团决策运营提供数据方案以及负责产品从概念提出、到分析决策、到执行落地；<br/>
+                            2.需求调研、用户访谈，梳理业务流程、挖掘用户需求、完善产品功能和体验，完成产品原型设计及产品需求分析文档的编写；<br/>
+                            3.根据实际业务流程来分析系统功能需求，并与设计、开发、测试、业务人员等多方资源进行沟通，确定实现方案；<br/>
+                            4.对已经实现的系统进行需求验证，确认系统与需求设计保持一致，参与系统功能验收工作及用户手册、新增产品功能培训资料的编写。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.具有全面的大数据知识体系，了解大数据产品设计架构和技术策略；<br/>
+                            2.3年以上互联网相关大数据运营平台产品经验优先；<br/>
+                            3.具有软件需求调研、业务流程梳理分析经验，能独立完成需求文档、业务流程图（SOP），需求原型工作；<br/>
+                            4.具有良好的团队协作精神，思维清晰敏捷，逻辑分析能力强；<br/>
+                            5.对数据敏感，有数据分析、数据挖掘相关经验优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 15">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 850px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.参与公司新产品的概念设计和产品体验框架的制定和设计；<br/>
+                            2.对产品持续进行设计优化，提升用户体验；<br/>
+                            3.进行设计规范的输出，并推动规范在整个项目团队执行。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.具备3-5年以上互联网公司用户体验设计、交互设计工作经验，并有成功案例；<br/>
+                            2.对用户体验和交互设计有较深的理解，有完整的方法论及敏锐度；<br/>
+                            3.熟悉网页、APP设计的流程，包括产品功能分析、用户角色分析、高保真原型设计、界面开发、产品易用性测试；<br/>
+                            4.能够提供高质量的产品原型、流程图、线框图等，能清晰的表达设计方案；<br/>
+                            5.熟练运用Axure、sketch等工具，有一定视觉设计能力；<br/>
+                            6.善于沟通和思考，富有激情，关注细节，具有团队精神，能够承受高强度的工作压力；<br/>
+                            要求请投递简历的同时附带个人作品或附上作品线上地址。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 市场类招聘信息 -->
+    <div class="listBox">
+        <div class="bigTitle">市场类<span>MARKETING</span></div>
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="16">市场公关</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责整理、收集、分析行业动态，分析和总结市场情况；<br/>
+                        2.积累和巩固公司与政府的长期资源关系，具有项目延伸、拓展能力；<br/>
+                        3.负责政策信息收集，申请公司各种政府扶持资金、荣誉项目、资质等申报工作；<br/>
+                        4.与政府相关部门的日常沟通交流，为项目运作提供政府公关支持；<br/>
+                        5.撰写公司涉及对外文档（如汇报、发言、函件等）。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="17">品牌运营</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责品牌体系梳理、SLOGAN、VI等品牌识别元素的拟定；<br/>
+                        2.根据项目的定位和发展战略，负责品牌市场运营的工作，包括品牌市场定位、策划及品牌的运营推广等；<br/>
+                        3.收集行业、市场、竞品、渠道信息，并深度研究分析，根据品牌定位 合理地选择有效的推广渠道，提升品牌影响力
+                    </div>
+
+                </div>
+
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="18">直播运营</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责直播和内容视频策划，协助视频拍摄；<br/>
+                        2.配合公司推广的需求，开拓、引进各类媒体资源（如传统媒体、新媒体、大V、KOL等），收集与整合媒体资源；<br/>
+                        3.协助执行品牌的各种推广活动，包括但不限于稿件发布、媒体访问、专题合作、论坛合作等。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 16">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 30px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责整理、收集、分析行业动态，分析和总结市场情况；<br/>
+                            2.积累和巩固公司与政府的长期资源关系，具有项目延伸、拓展能力；<br/>
+                            3.负责政策信息收集，申请公司各种政府扶持资金、荣誉项目、资质等申报工作；<br/>
+                            4.与政府相关部门的日常沟通交流，为项目运作提供政府公关支持；<br/>
+                            5.撰写公司涉及对外文档（如汇报、发言、函件等）。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.新闻、中文、广告、营销等专业毕业，3-5年同类岗位经验；<br/>
+                            2.具备独立撰写公关策划方案及新闻内容能力；<br/>
+                            3.了解涉农产品定位推广及公关活动运作环节及流程；<br/>
+                            4.有较强的团队意识，工作积极主动，责任感强，能够有效推动项目完 成；<br/>
+                            5.有政府资源者优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 17">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 430px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责品牌体系梳理、SLOGAN、VI等品牌识别元素的拟定；<br/>
+                            2.根据项目的定位和发展战略，负责品牌市场运营的工作，包括品牌市场定位、策划及品牌的运营推广等；<br/>
+                            3.收集行业、市场、竞品、渠道信息，并深度研究分析，根据品牌定位 合理地选择有效的推广渠道，提升品牌影响力
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科以上学历，传播学/广告策划等相关专业，同类岗位5年以上工作 经验；<br/>
+                            2.擅于捕捉热点，熟悉新媒体运营，具备市场营销意识，擅于从客户视角思考解决问题，发挥品牌作用；<br/>
+                            3.对业务敏感，能从公司业务角度思考，结合市场活动工作完成公司品牌的宣传推广；<br/>
+                            4.农产品品牌推广经验优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 18">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 830px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责直播和内容视频策划，协助视频拍摄；<br/>
+                            2.配合公司推广的需求，开拓、引进各类媒体资源（如传统媒体、新媒体、大V、KOL等），收集与整合媒体资源；<br/>
+                            3.协助执行品牌的各种推广活动，包括但不限于稿件发布、媒体访问、专题合作、论坛合作等。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科及以上学历，新闻、公关、市场营销等相关专业毕业，3年以上直播运营经验，活动策划、组织和实施经验；<br/>
+                            2.了解各大直播平台，思维活跃、有创新意识，良好的沟通协作能力；<br/>
+                            3.农牧产品相关从业经验优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="joinUsBox">
+            <div class="wrap" style="display: flex;">
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="19">高级文案</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.撰写各产品线宣传策划方案及创意点子；<br/>
+                        2.负责撰写宣传推广文案和宣传资料文案；<br/>
+                        3.负责各类自媒体推广（软文和广告资料收集、整理、发布等）；<br/>
+                        4.撰写官方公文稿。
+                    </div>
+                </div>
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="20">活动策划</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责策划并执行线上/线下活动；<br/>
+                        2.根据公司智慧农牧的战略目标及业务发展方向，制定部门年度、季度、月度总体线上/线下营销活动策略规划及费用规划；<br/>
+                        3.针对节日及品牌热点事件等制定活动营销方案，跟进实施并完成效果评估；<br/>
+                        4.通过多种营销手段，提升业务在目标用户中的认知度，拉动新用户，实现用户增长。
+                    </div>
+
+                </div>
+
+                <div class="itemBox">
+                    <p class="title" @click="showMore" data-showNum="21">商务合作</p>
+                    <p class="name">岗位职责</p>
+                    <div class="info">
+                        1.负责政府类、企业类业务开拓/模式宣导/客户沟通/方案设计/合同达成/回款跟进等商务工作；<br/>
+                        2.协助中端技术同事与各合作农场沟通，推进软硬件设备进场及安装调试等工作；<br/>
+                        3.协助后端销售同事与客户沟通，制定线上营销推广方案，协助并支持项目营销推广方案的落地及效果达成。
+                    </div>
+                </div>
+            </div>
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 19">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 30px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.撰写各产品线宣传策划方案及创意点子；<br/>
+                            2.负责撰写宣传推广文案和宣传资料文案；<br/>
+                            3.负责各类自媒体推广（软文和广告资料收集、整理、发布等）；<br/>
+                            4.撰写官方公文稿。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.新闻、中文、广告、营销等专业毕业，5年以上文案工作经验；<br/>
+                            2.熟悉微信/微博/互联网等社会化媒体传播的内容创作，具有较为过硬的文字功底和、创意能力、品鉴能力，能捕捉创意热点，洞察受众需求；<br/>
+                            3.执行力强，有良好的策略思考能力并能独立撰写文案；<br/>
+                            4.有农产品相关从业经验优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px;" v-if="showNum === 20">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 430px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责策划并执行线上/线下活动；<br/>
+                            2.根据公司智慧农牧的战略目标及业务发展方向，制定部门年度、季度、月度总体线上/线下营销活动策略规划及费用规划；<br/>
+                            3.针对节日及品牌热点事件等制定活动营销方案，跟进实施并完成效果评估；<br/>
+                            4.通过多种营销手段，提升业务在目标用户中的认知度，拉动新用户，实现用户增长。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.传播类本科以上学历，3-5年市场工作经验；<br/>
+                            2.有大型互联网工作经验或快速消费品行业品牌经验，丰富的市场策划、创意执行等相关经验；<br/>
+                            3.具有较强的文案撰写和市场方案策划、PPT制作能力，熟练掌握社交媒体运营工具；<br/>
+                            4.具有农业产品线上/线下活动统筹策划经验者优先。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showMore" style="margin-top:-210px" v-if="showNum === 21">
+                <div class="listMore" style="margin:0 auto;width:1200px;position: relative;">
+                    <img src="images/joinUs-pre-2.png" style="position: absolute;top:-50px;left: 830px;"/>
+                    <div class="itemList">
+                        <p class="name">岗位职责</p>
+                        <div class="info">
+                            1.负责政府类、企业类业务开拓/模式宣导/客户沟通/方案设计/合同达成/回款跟进等商务工作；<br/>
+                            2.协助中端技术同事与各合作农场沟通，推进软硬件设备进场及安装调试等工作；<br/>
+                            3.协助后端销售同事与客户沟通，制定线上营销推广方案，协助并支持项目营销推广方案的落地及效果达成。
+                        </div>
+                    </div>
+                    <div class="itemList">
+                        <p class="name">任职要求</p>
+                        <div class="info">
+                            1.本科以上学历，农业相关专业，市场营销推广及政府资源整合从业经验优先；<br/>
+                            2.具有商务拓展、市场营销从业经验5年以上，对农业产业政策、农业物联网技术、农产品市场营销等方面具有较广认知度；<br/>
+                            3.具有与地方政府、农业企业、行业学协会、农业专家沟通及合作经验优先考虑；<br/>
+                            4.具备偏远地区不定期出差适应能力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="listBox" style="margin-top:100px;display: none;">
+        <div class="bigTitle">产品类</div>
+        <div class="wrap">
+            <div class="joinBox clearfix">
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>智能硬件产品经理</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 413px;">
+                        <div class="gwzz">
+                            1.市场调研及分析物产品联网/智能硬件终端产品行业、竞争对手、用户等调研及分析；<br/>
+                            2.新产品的定义产品需求收集、产品定位、产品规划等；<br/>
+                            3.现有产品的迭代结合行业变化，对现有产品进行分析管理，推动迭代；<br/>
+                            4.领导安排的与产品相关的其他工作。
+                        </div>
+                        <div class="rzyq">
+                            1.本科及上学历，理工科相关专业，3年以上物联网/智能硬件终端产品的从业经验；<br/>
+                            2.了解物联网/智能硬件终端产品和市场发展及布局，喜欢研究智能硬件产品，电子发烧友尤佳；<br/>
+                            3.思维敏捷，用户感知、市场洞察、及逻辑思维能力强，有一定的底层规划能力及成本控制意识；<br/>
+                            4.具有创新精神及责任心，充满激情，能承受工作压力。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>产品经理</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 413px;">
+                        <div class="gwzz">
+                            1.负责公司核心网平台相关的迭代，优化开发者服务质量，提升业务效率；<br/>
+                            2.与多部门协作，提升产品质量，保证项目正常进行；<br/>
+                            3.梳理系统功能和业务逻辑，跟踪内外部反馈，发掘业务改进点并完善方案推进落地。
+                        </div>
+                        <div class="rzyq">
+                            1.计算机、网络、通信等相关专业本科及以上学历；<br/>
+                            2.3-5年产品经理工作经验，熟悉产品经理的岗位职责和工作流程；<br/>
+                            3.具备开放平台、业务后台、数据平台产品设计经验；<br/>
+                            4.良好的交互设计与视觉审美能力；<br/>
+                            5.逻辑清晰、自驱力强、富有责任心；<br/>
+                            6.智能硬件、物联网相关工作经历加分。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>UI设计师</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 429px;">
+                        <div class="gwzz">
+                            1.公司各项目PC、APP端UI设计，包括新产品风格定义及产品日常迭代的设计更新；<br/>
+                            2.公司各项目PC、APP端产品设计中的交互及用户体验优化。
+                        </div>
+                        <div class="rzyq">
+                            1.有复杂后台网站设计、APP设计相关经验；<br/>
+                            2.对用户体验敏感，善用设计语言解决产品问题；<br/>
+                            3.熟悉IOS/Android/Web平台设计规范，能独立完成项目的交互和UI设计；<br/>
+                            4.工作态度端正，有责任心并能承受一定的工作压力，能适应加班等各 种应急需求
+                        </div>
+                        <p class="intro">要求请投递简历的同时附带个人作品或附上作品线上地址。</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>项目实施经理</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 429px;">
+                        <div class="gwzz">
+                            1.根据实地调研信息制订主要粮食作物和经济作物的基础植保方案、农 资管理方案；<br/>
+                            2.挖掘行业新痛点，分析潜在市场，横向对比同质产品，竞品分析，为产品优化提供参考；<br/>
+                            3.编制培训教材，对接农场操作人员并实施培训；<br/>
+                            4.所负责区域项目落地进度跟踪及管理，根据业务区域，对业务情况进行梳理，定期汇报总结；<br/>
+                            5.对于业务推进过程中遇到的问题进行分析并提出相应解决方案
+                        </div>
+                        <div class="rzyq">
+                            1.了解农资流通现状和经营模式，熟悉主要的农化企业的运作模式和业务模式；<br/>
+                            2.国内一线农业院校植保专业背景，或供职于主流农化企业，有相关工作经验；<br/>
+                            3.有电信运营商、设备商和农业信息化行业工作背景的优先考虑。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>大数据产品经理</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 518px;">
+                        <div class="gwzz">
+                            1.负责整个大数据运营平台的产品生命周期的建设，为集团决策运营提供数据方案以及负责产品从概念提出、到分析决策、到执行落地；<br/>
+                            2.需求调研、用户访谈，梳理业务流程、挖掘用户需求、完善产品功能和体验，完成产品原型设计及产品需求分析文档的编写；<br/>
+                            3.根据实际业务流程来分析系统功能需求，并与设计、开发、测试、业务人员等多方资源进行沟通，确定实现方案；<br/>
+                            4.对已经实现的系统进行需求验证，确认系统与需求设计保持一致，参与系统功能验收工作及用户手册、新增产品功能培训资料的编写。
+                        </div>
+                        <div class="rzyq">
+                            1.具有全面的大数据知识体系，了解大数据产品设计架构和技术策略；<br/>
+                            2.3年以上互联网相关大数据运营平台产品经验优先；<br/>
+                            3.具有软件需求调研、业务流程梳理分析经验，能独立完成需求文档、业务流程图（SOP），需求原型工作；<br/>
+                            4.具有良好的团队协作精神，思维清晰敏捷，逻辑分析能力强；<br/>
+                            5.对数据敏感，有数据分析、数据挖掘相关经验优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>交互设计师</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 518px;">
+                        <div class="gwzz">
+                            1.参与公司新产品的概念设计和产品体验框架的制定和设计；<br/>
+                            2.对产品持续进行设计优化，提升用户体验；<br/>
+                            3.进行设计规范的输出，并推动规范在整个项目团队执行。
+                        </div>
+                        <div class="rzyq">
+                            1.具备3-5年以上互联网公司用户体验设计、交互设计工作经验，并有成功案例；<br/>
+                            2.对用户体验和交互设计有较深的理解，有完整的方法论及敏锐度；<br/>
+                            3.熟悉网页、APP设计的流程，包括产品功能分析、用户角色分析、高保真原型设计、界面开发、产品易用性测试；<br/>
+                            4.能够提供高质量的产品原型、流程图、线框图等，能清晰的表达设计方案；<br/>
+                            5.熟练运用Axure、sketch等工具，有一定视觉设计能力；<br/>
+                            6.善于沟通和思考，富有激情，关注细节，具有团队精神，能够承受高强度的工作压力；
+                        </div>
+                        <p class="intro">要求请投递简历的同时附带个人作品或附上作品线上地址。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="listBox" style="margin-top:100px;display: none;">
+        <div class="bigTitle">市场类</div>
+        <div class="wrap">
+            <div class="joinBox clearfix">
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>市场公关</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 413px;">
+                        <div class="gwzz">
+                            1.负责整理、收集、分析行业动态，分析和总结市场情况；<br/>
+                            2.积累和巩固公司与政府的长期资源关系，具有项目延伸、拓展能力；<br/>
+                            3.负责政策信息收集，申请公司各种政府扶持资金、荣誉项目、资质等申报工作；<br/>
+                            4.与政府相关部门的日常沟通交流，为项目运作提供政府公关支持；<br/>
+                            5.撰写公司涉及对外文档（如汇报、发言、函件等）。
+                        </div>
+                        <div class="rzyq">
+                            1.新闻、中文、广告、营销等专业毕业，3-5年同类岗位经验；<br/>
+                            2.具备独立撰写公关策划方案及新闻内容能力；<br/>
+                            3.了解涉农产品定位推广及公关活动运作环节及流程；<br/>
+                            4.有较强的团队意识，工作积极主动，责任感强，能够有效推动项目完 成；<br/>
+                            5.有政府资源者优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>品牌运营</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 413px;">
+                        <div class="gwzz">
+                            1.负责品牌体系梳理、SLOGAN、VI等品牌识别元素的拟定；<br/>
+                            2.根据项目的定位和发展战略，负责品牌市场运营的工作，包括品牌市场定位、策划及品牌的运营推广等；<br/>
+                            3.收集行业、市场、竞品、渠道信息，并深度研究分析，根据品牌定位
+                            合理地选择有效的推广渠道，提升品牌影响力
+                        </div>
+                        <div class="rzyq">
+                            1.本科以上学历，传播学/广告策划等相关专业，同类岗位5年以上工作 经验；<br/>
+                            2.擅于捕捉热点，熟悉新媒体运营，具备市场营销意识，擅于从客户视角思考解决问题，发挥品牌作用；<br/>
+                            3.对业务敏感，能从公司业务角度思考，结合市场活动工作完成公司品牌的宣传推广；<br/>
+                            4.农产品品牌推广经验优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>直播运营</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem" style="height: 363px;">
+                        <div class="gwzz">
+                            1.负责直播和内容视频策划，协助视频拍摄；<br/>
+                            2.配合公司推广的需求，开拓、引进各类媒体资源（如传统媒体、新媒体、大V、KOL等），收集与整合媒体资源；<br/>
+                            3.协助执行品牌的各种推广活动，包括但不限于稿件发布、媒体访问、专题合作、论坛合作等。
+                        </div>
+                        <div class="rzyq">
+                            1.本科及以上学历，新闻、公关、市场营销等相关专业毕业，3年以上直播运营经验，活动策划、组织和实施经验；<br/>
+                            2.了解各大直播平台，思维活跃、有创新意识，良好的沟通协作能力；<br/>
+                            3.农牧产品相关从业经验优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>高级文案</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 363px;">
+                        <div class="gwzz">
+                            1.撰写各产品线宣传策划方案及创意点子；<br/>
+                            2.负责撰写宣传推广文案和宣传资料文案；<br/>
+                            3.负责各类自媒体推广（软文和广告资料收集、整理、发布等）；<br/>
+                            4.撰写官方公文稿。
+                        </div>
+                        <div class="rzyq">
+                            1.新闻、中文、广告、营销等专业毕业，5年以上文案工作经验；<br/>
+                            2.熟悉微信/微博/互联网等社会化媒体传播的内容创作，具有较为过硬的文字功底和、创意能力、品鉴能力，能捕捉创意热点，洞察受众需求；<br/>
+                            3.执行力强，有良好的策略思考能力并能独立撰写文案；<br/>
+                            4.有农产品相关从业经验优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>活动策划</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 435px;">
+                        <div class="gwzz">
+                            1.负责策划并执行线上/线下活动；<br/>
+                            2.根据公司智慧农牧的战略目标及业务发展方向，制定部门年度、季度、月度总体线上/线下营销活动策略规划及费用规划；<br/>
+                            3.针对节日及品牌热点事件等制定活动营销方案，跟进实施并完成效果评估；<br/>
+                            4.通过多种营销手段，提升业务在目标用户中的认知度，拉动新用户，实现用户增长。
+                        </div>
+                        <div class="rzyq">
+                            1.传播类本科以上学历，3-5年市场工作经验；<br/>
+                            2.有大型互联网工作经验或快速消费品行业品牌经验，丰富的市场策划、创意执行等相关经验；<br/>
+                            3.具有较强的文案撰写和市场方案策划、PPT制作能力，熟练掌握社交媒体运营工具；<br/>
+                            4.具有农业产品线上/线下活动统筹策划经验者优先。
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="top">
+                        <span class="a1"></span>
+                        <span class="a2"></span>
+                        <span class="a3"></span>
+                        <label>商务合作</label>
+                        <span class="a3"></span>
+                        <span class="a2"></span>
+                        <span class="a1"></span>
+                    </div>
+                    <div class="boxItem"  style="height: 435px;">
+                        <div class="gwzz">
+                            1.负责政府类、企业类业务开拓/模式宣导/客户沟通/方案设计/合同达成/回款跟进等商务工作；<br/>
+                            2.协助中端技术同事与各合作农场沟通，推进软硬件设备进场及安装调试等工作；<br/>
+                            3.协助后端销售同事与客户沟通，制定线上营销推广方案，协助并支持项目营销推广方案的落地及效果达成。
+                        </div>
+                        <div class="rzyq">
+                            1.本科以上学历，农业相关专业，市场营销推广及政府资源整合从业经验优先；<br/>
+                            2.具有商务拓展、市场营销从业经验5年以上，对农业产业政策、农业物联网技术、农产品市场营销等方面具有较广认知度；<br/>
+                            3.具有与地方政府、农业企业、行业学协会、农业专家沟通及合作经验优先考虑；<br/>
+                            4.具备偏远地区不定期出差适应能力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jobTxt">简历投递邮箱：hr@qingningxinan.com</div>
+
+    <my-foot></my-foot>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入 http-vue-loader -->
+<script src="https://unpkg.com/http-vue-loader"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript">
+    //httpVueLoader.register(Vue,'component/my-head.vue');
+    Vue.use(httpVueLoader)
+    new Vue({
+        el: '#app',
+        data(){
+            return{
+                tabnum:5,
+                showNum:0
+            }
+        },
+        methods:{
+            showMore(e){
+                console.log(e.target.dataset.shownum)
+                let n = parseInt(e.target.dataset.shownum)
+                this.showNum = n
+                console.log(this.showNum)
+            }
+        },
+        components: {
+            // 将组建加入组建库
+            'my-head': 'url:component/my-head.vue',
+            'my-foot': 'url:component/my-foot.vue'
+        }
+    })
+</script>
+</html>

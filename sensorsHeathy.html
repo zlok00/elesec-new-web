@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>传感器与健康监测</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="SensorsPage" id="app">
+    <my-head :keynumber="tabnum"></my-head>
+<!--    <div class="bannerBox"></div>-->
+    <div class="bannerBox">
+        <div class="wrap">
+            <p>传感器与健康监测</p>
+        </div>
+    </div>
+    <div class="mainBox">
+        <div class="bigTitle">传感器与健康监测<span>Sensors and health monitoring</span></div>
+        <div class="wrap">
+            <div class="topInfo">
+                为了保证农场动物的健康与生产性能的和谐共存，以确保长期的回报和利润。我们通过多类传感设备，多维度监控牲畜生命体征和健康状态。
+            </div>
+            <div class="item">
+                <div class="intro">
+                    <div class="info">多种类传感装置部署<span></span></div>
+                    <p>通过视频称重系统进行牲畜的身体尺寸的计算，然后同时计算出它的体重变化情况。及时发现体重增减情况，监测牛只增重阶段性目标的是否达成。</p>
+                </div>
+                <div class="pic">
+                    <img src="images/sensors/s-01.jpg" alt="" width="700"/>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="images/sensors/s-02.jpg" alt="" width="700"/>
+                </div>
+                <div class="intro mr">
+                    <div class="info">多维度体征数据采集<span></span></div>
+                   <p>当感应数据完成采集、传输与分析后，从大数据平台中可以实时监测牲畜在咀嚼、躺下、行走、奔跑、喝水、进食，甚至从出生开始的哺乳情况。</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="intro">
+                    <div class="info">模式识别与智能算法<span></span></div>
+                    <p>通过数据建模可以预测某头牛是否生病、乏弱、受伤、或刚刚进行过打斗。以此实时提醒人们关注这些动物状态变化，提前采取相应措施，更好的关爱农场动物，尊重其生命过程。</p>
+                </div>
+                <div class="pic">
+                    <img src="images/sensors/s-03.jpg" alt="" width="700"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <my-foot></my-foot>
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入 http-vue-loader -->
+<script src="https://unpkg.com/http-vue-loader"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript">
+    //httpVueLoader.register(Vue,'component/my-head.vue');
+    Vue.use(httpVueLoader)
+    new Vue({
+        el: '#app',
+        data(){
+            return{
+                tabnum:1
+            }
+        },
+        components: {
+            // 将组建加入组建库
+            'my-head': 'url:component/my-head.vue',
+            'my-foot': 'url:component/my-foot.vue'
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>疾病受伤预警</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="InjuryPage" id="app">
+    <my-head :keynumber="tabnum"></my-head>
+    <div class="bannerBox">
+        <div class="wrap">
+            <p>农场动物福利养殖</p>
+        </div>
+    </div>
+
+    <div class="advantageBox">
+        <div class="bigTitle">疾病受伤预警的价值<span>The value of early warning of disease and injury</span></div>
+        <div class="wrap">
+            <div class="info">牛是我国养殖业的重要畜牧种类之一，对促进养殖业发展农民增收致富具有重要作用。养殖过程中，牛的疾病和受伤往往会
+             给养殖户造成损失，严重时会对养殖户造成极大冲击。因此，在饲养过程中，若能做到及早发现、尽早治疗、科学救治，能
+             将经济损失降到最低。</div>
+        </div>
+    </div>
+
+    <div class="dataBox">
+        <div class="bigTitle">数据采集<span>Data acquisition</span></div>
+        <div class="wrap">
+            <p class="shortInfo">配置多种类传感传输设备，对牛的生命状态进行多维度数据采集。</p>
+            <div class="dataContent">
+                <div class="item">
+                    <img src="images/animals/data-hjwd.png" alt="环境温度"/>
+                    <p>环境温度</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-hjsd.png" alt="环境湿度"/>
+                    <p>环境湿度</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-ydl.png" alt="运动量"/>
+                    <p>运动量</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-ydzt.png" alt="运动姿态"/>
+                    <p>运动姿态</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-dwtw.png" alt="动物体温"/>
+                    <p>动物体温</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-xwgj.png" alt="行为轨迹"/>
+                    <p>行为轨迹</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modelBox">
+        <div class="bigTitle">模型分析<span>Model analysis</span></div>
+        <div class="wrap">
+            <div class="info">
+                通过隐马尔可夫模型（Hidden Markov Model，HMM）进行分析诊断，当牛出现异常情况（如运动量过低、躺卧时间过
+                长、进食饮水量过少等）及时推送对应的消息预警，提醒养殖人员及时前往处理。由此大幅降低因发现晚、救治不及时而
+                导致的疾病受伤死亡损失和动物痛苦生命体验。
+            </div>
+            <div class="modelContent">
+                <img src="images/animals/data-m-01.png" alt=""/>
+                <img src="images/animals/data-m-02.png" alt=""/>
+                <img src="images/animals/data-m-03.png" alt=""/>
+            </div>
+        </div>
+    </div>
+
+    <div class="reportBox">
+        <div class="bigTitle">分析报告<span>Analysis report</span></div>
+        <div class="wrap">
+            <p class="shortInfo">除了提供及时发现及时预警的功能 ，对每头牛的健康状态建立牛籍卡（牛的品种、性别、月龄、体况、体重），随时可以查看<br/>
+                牛自出生以来的健康状态和就诊、治疗、用药、康复记录。对牛肉品质的鉴定和评估，起到积极的辅助作用。</p>
+            <div class="dataContent">
+                <div class="item">
+                    <img src="images/animals/data-ycbj.png" alt="异常报警"/>
+                    <p>异常报警</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-jzjl.png" alt="就诊记录"/>
+                    <p>就诊记录</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-yyjl.png" alt="用药记录"/>
+                    <p>用药记录</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-kfjl.png" alt="康复记录"/>
+                    <p>康复记录</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-dwzz.png" alt="定位追踪"/>
+                    <p>定位追踪</p>
+                </div>
+                <div class="item">
+                    <img src="images/animals/data-gjhs.png" alt="轨迹回溯"/>
+                    <p>轨迹回溯</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="solutionBox">
+       <div class="bigTitle">定制化方案<span>Customized scheme</span></div>
+       <div class="wrap">
+            <p class="shortInfo">关于疾病受伤监测创新，可以说全然是以数据采集分析为中心展开的。通过不断优化的技术手段，对牲畜健康异常提供筛查<br/>
+             诊断和预警，规避病疫风险对等的收益价值，并且针对不同类型的养殖户提供针对性的灵活组合解决方案。</p>
+           <div class="solutionContent">
+                <div class="pic">
+                    <img src="images/animals/data-s-01.png"/>
+                </div>
+               <div class="pic">
+                   <img src="images/animals/data-s-02.png"/>
+               </div>
+               <div class="pic">
+                   <img src="images/animals/data-s-03.png"/>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    <my-foot></my-foot>
+
+
+
+
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入 http-vue-loader -->
+<script src="https://unpkg.com/http-vue-loader"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script type="text/javascript">
+    //httpVueLoader.register(Vue,'component/my-head.vue');
+    Vue.use(httpVueLoader)
+    new Vue({
+        el: '#app',
+        data(){
+            return{
+                tabnum:1
+            }
+        },
+        components: {
+            // 将组建加入组建库
+            'my-head': 'url:component/my-head.vue',
+            'my-foot': 'url:component/my-foot.vue'
+        }
+    })
+</script>
+</html>
